@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Republic Day Celebration</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: rgb(255, 166, 0);
+    }
+
+    /* Hero Section */
+    #hero {
+      background: linear-gradient(120deg, #FF9933, #FFFFFF, #138808);
+      animation: gradientAnimation 5s infinite alternate;
+      position: relative;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+
+    /* Chakra Styling */
+    .chakra {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    /* Image Section */
+    #defense {
+      background: #001F54;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .defense-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .defense-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid white;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .defense-images img:hover {
+      transform: scale(1.1);
+      border-color: #FF9933;
+    }
+
+    footer {
+      background: #FF9933;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FF9933;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#defense">Our Heroes</a>
+    <a href="#footer">Footer</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>
+      🇮🇳 Happy
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" alt="Ashoka Chakra" class="chakra">
+      Republic Day 🇮🇳
+    </h1>
+  </section>
+
+  <!-- Defense Section -->
+  <section id="defense">
+    <h2>Indian Armed Forces</h2>
+    <div class="defense-images">
+      <div>
+        <img src="F:\For only Coder's\Republic Day\Navy.jpeg" alt="Indian Navy">
+        <div class="defense-caption">Indian Navy</div>
+      </div>
+      <div>
+        <img src="F:\For only Coder's\Republic Day\Army.jpeg" alt="Indian Army">
+        <div class="defense-caption">Indian Army</div>
+      </div>
+      <div>
+        <img src="F:\For only Coder's\Republic Day\AirForce.jpeg" alt="Indian Air Force">
+        <div class="defense-caption">Indian Air Force</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    Jai Hind! 🇮🇳 Proud to be an Indian.
+  </footer>
+</body>
+</html>
